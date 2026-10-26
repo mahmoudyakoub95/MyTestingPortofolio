@@ -1,0 +1,27 @@
+There are 4 binary conditions, each with two possible values (Y or N).
+
+2^4 = 16 combinations
+
+## 2. Decision table
+
+| Rule | Senior | Student | Outside peak hours | Frequent-traveler card | Total discount |
+| --- | --- | --- | --- | --- | --- |
+| R1 | N | N | N | N | 0% |
+| R2 | N | N | N | Y | 5% |
+| R3 | N | N | Y | N | 10% |
+| R4 | N | N | Y | Y | 15% |
+| R5 | N | Y | N | N | 15% |
+| R6 | N | Y | N | Y | 20% |
+| R7 | N | Y | Y | N | 25% |
+| R8 | N | Y | Y | Y | 30% |
+| R9 | Y | N | N | N | 20% |
+| R10 | Y | N | N | Y | 25% |
+| R11 | Y | N | Y | N | 30% |
+| R12 | Y | N | Y | Y | 35% |
+| R13 | Y | Y | N | N | 35% |
+| R14 | Y | Y | N | Y | 40% |
+| R15 | Y | Y | Y | N | 45% |
+| R16 | Y | Y | Y | Y | 50% |
+
+Note that i considered that senior and student condition could be combined.
+if not,there will be only 12 rules
