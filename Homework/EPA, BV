@@ -1,0 +1,74 @@
+## 1. Äquivalenzklassen
+
+- **Klasse 1 (nicht bestanden): 0-49**
+- **Klasse 2 (Bestanden): 50-69**
+- **Klasse 3(Leistung): 70-89**
+- **Klasse 4 (Auszeichnung): 90-100**
+
+Ungültige Äquivalenzklassen sind:
+
+- **Klasse 5: <0**
+- **Klasse 6: >100**
+
+## 2. Grenzwerte
+
+**Klasse 1**
+
+- die untere Grenze:-1 invalid
+- Grenze:0 nicht bestanden
+- die obere Grenze:+1 nicht bestanden
+- die untere Grenze:48 nicht bestanden
+- Grenze:49 nicht bestanden
+- die obere Grenze:50 bestanden
+
+**Klasse 2**
+
+- die untere Grenze: 49 nicht bestanden
+- Grenze:50 bestanden
+- die obere Grenze:51 bestanden
+- die untere Grenze:68 bestanden
+- Grenze:69 bestanden
+- die obere Grenze:70 Leistung
+
+**Klasse 3**
+
+- die untere Grenze:69 bestanden
+- Grenze:70 Leistung
+- die obere Grenze:71 Leistung
+- die untere Grenze:88 Leistung
+- Grenze:89 Leistung
+- die obere Grenze:90 Auszeichnung
+
+**Klasse 4**
+
+- die untere Grenze:89 Leistung
+- Grenze:90 Auszeichnung
+- die obere Grenze:91 Auszeichnung
+- die untere Grenze:99 Auszeichnung
+- Grenze: 100 Auszeichnung
+- die obere Grenze:101 Invalid
+
+| TC | Eingabewert | Erwartetes Ergebnis | Testart |  |
+| --- | --- | --- | --- | --- |
+| TC01 | 25 | Nicht bestanden | Äquivalenzklasse 1 |  |
+| TC02 | 60 | Bestanden | Äquivalenzklasse 2 |  |
+| TC03 | 80 | Leistung | Äquivalenzklasse 3 |  |
+| TC04 | 95 | Auszeichnung | Äquivalenzklasse 4 |  |
+| TC05 | -1 | Ungültige Eingabe / Ablehnung | Untere Grenze: -1 |  |
+| TC06 | 0 | Nicht bestanden | Untere Grenze: 0 |  |
+| TC07 | 1 | Nicht bestanden | Untere Grenze: +1 |  |
+| TC08 | 48 | Nicht bestanden | Obere Grenze Klasse 1: -1 |  |
+| TC09 | 49 | Nicht bestanden | Obere Grenze Klasse 1 |  |
+| TC10 | 50 | Bestanden | Übergang Klasse 1 → 2 |  |
+| TC11 | 51 | Bestanden | Untere Grenze Klasse 2: +1 |  |
+| TC12 | 68 | Bestanden | Obere Grenze Klasse 2: -1 |  |
+| TC13 | 69 | Bestanden | Obere Grenze Klasse 2 |  |
+| TC14 | 70 | Leistung | Übergang Klasse 2 → 3 |  |
+| TC15 | 71 | Leistung | Untere Grenze Klasse 3: +1 |  |
+| TC16 | 88 | Leistung | Obere Grenze Klasse 3: -1 |  |
+| TC17 | 89 | Leistung | Obere Grenze Klasse 3 |  |
+| TC18 | 90 | Auszeichnung | Übergang Klasse 3 → 4 |  |
+| TC19 | 91 | Auszeichnung | Untere Grenze Klasse 4: +1 |  |
+| TC20 | 99 | Auszeichnung | Obere Grenze Klasse 4: -1 |  |
+| TC21 | 100 | Auszeichnung | Obere gültige Grenze |  |
+| TC22 | 101 | Ungültige Eingabe / Ablehnung | Obere Grenze: +1 |  |
