@@ -203,14 +203,3 @@
 
 **Automation:** Yes. The calculation and displayed message can be checked automatically using different order values.
 
-### Test Case 5 – Check that the shipping fee is not applied more than once
-
-**Test Design Technique:** Error Guessing
-
-**Input:** A user adds products to the cart with a total order value below €20 and proceeds to checkout.
-
-**Expected Outcome:** The system includes the €5 shipping fee only once in the order total.
-
-**Automation:** Yes. This test can be automated to detect potential calculation errors or duplicate shipping charges.
-
-**Note:** The detailed requirements specify a €5 shipping fee for orders below €20 but do not explicitly describe how the fee is handled across different checkout steps. This test checks a reasonable potential error and should be aligned with the checkout implementation.
