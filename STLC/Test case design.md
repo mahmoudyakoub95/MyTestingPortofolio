@@ -201,8 +201,3 @@
 **Expected Outcome:** The system displays a message below the order details informing the user that they need to spend €5 more to qualify for free shipping.
 
 **Automation:** Yes – verifies the remaining-amount calculation and message.
-
-
-**Automation:** Yes – checks for duplicate shipping charges.
-
-**Note:** This is an additional error-guessing check; the detailed requirements do not explicitly describe fee handling across checkout steps.
