@@ -1,11 +1,10 @@
-
 # Test Case Design – GroceryMate
 
 ## 1. Product Rating System
 
 **Test Design Techniques:** Boundary Value Analysis (BVA), Decision Table Testing, Use Case Testing, Error Guessing.
 
-### Test Case 1 – Submit a 1-star rating
+**Test Case 1 – Submit a 1-star rating**
 
 **Test Design Technique:** Boundary Value Analysis (BVA)
 
@@ -15,7 +14,7 @@
 
 **Automation:** Yes. This is a repeatable functional test and can be automated to verify that the minimum rating value is accepted.
 
-### Test Case 2 – Submit a 5-star rating
+**Test Case 2 – Submit a 5-star rating**
 
 **Test Design Technique:** Boundary Value Analysis (BVA)
 
@@ -25,7 +24,7 @@
 
 **Automation:** Yes. This verifies the upper boundary of the rating range and is suitable for automation.
 
-### Test Case 3 – Submit a rating without written feedback
+**Test Case 3 – Submit a rating without written feedback**
 
 **Test Design Technique:** Decision Table Testing
 
@@ -35,7 +34,7 @@
 
 **Automation:** Yes. This is a repeatable test that verifies written feedback is optional.
 
-### Test Case 4 – Submit a rating without purchasing the product
+**Test Case 4 – Submit a rating without purchasing the product**
 
 **Test Design Technique:** Decision Table Testing
 
@@ -45,7 +44,7 @@
 
 **Automation:** Yes. This is suitable for automation because the purchase status and submission result can be checked systematically.
 
-### Test Case 5 – Edit an existing review
+**Test Case 5 – Edit an existing review**
 
 **Test Design Technique:** Use Case Testing
 
@@ -55,7 +54,7 @@
 
 **Automation:** Yes. This verifies an important user workflow and can be repeated with different rating and feedback values.
 
-### Test Case 6 – Delete an existing review
+**Test Case 6 – Delete an existing review**
 
 **Test Design Technique:** Use Case Testing
 
@@ -65,7 +64,7 @@
 
 **Automation:** Yes. This is a repeatable user workflow and can be automated to verify that the review is removed.
 
-### Test Case 7 – Remove written feedback but keep the star rating
+**Test Case 7 – Remove written feedback but keep the star rating**
 
 **Test Design Technique:** Use Case Testing
 
@@ -75,7 +74,7 @@
 
 **Automation:** Yes. This verifies that the system correctly handles editing only part of a review.
 
-### Test Case 8 – Submit written feedback without selecting a star rating
+**Test Case 8 – Submit written feedback without selecting a star rating**
 
 **Test Design Technique:** Error Guessing
 
@@ -87,13 +86,11 @@
 
 **Note:** The requirement does not explicitly state whether a star rating is mandatory when written feedback is submitted. This expected behavior should be confirmed.
 
----
-
 ## 2. Age Verification
 
 **Test Design Techniques:** Boundary Value Analysis (BVA), Equivalence Partitioning (EP), State Transition Testing, Error Guessing.
 
-### Test Case 1 – Verify age of exactly 18 years
+**Test Case 1 – Verify age of exactly 18 years**
 
 **Test Design Technique:** Boundary Value Analysis (BVA)
 
@@ -103,7 +100,7 @@
 
 **Automation:** Yes. This is a boundary test and can be automated to verify the minimum permitted age.
 
-### Test Case 2 – Verify age of one day under 18
+**Test Case 2 – Verify age of one day under 18**
 
 **Test Design Technique:** Boundary Value Analysis (BVA)
 
@@ -113,7 +110,7 @@
 
 **Automation:** Yes. This is a critical age restriction test and should be automated to prevent incorrect access.
 
-### Test Case 3 – Verify age of an adult user
+**Test Case 3 – Verify age of an adult user**
 
 **Test Design Technique:** Equivalence Partitioning (EP)
 
@@ -123,7 +120,7 @@
 
 **Automation:** Yes. This verifies the valid adult age group and can be repeated with different dates of birth.
 
-### Test Case 4 – Verify access after an underage result
+**Test Case 4 – Verify access after an underage result**
 
 **Test Design Technique:** State Transition Testing
 
@@ -133,7 +130,7 @@
 
 **Automation:** Yes. This test verifies the transition from the age verification prompt to the denied-access state.
 
-### Test Case 5 – Enter a date of birth in the future
+**Test Case 5 – Enter a date of birth in the future**
 
 **Test Design Technique:** Error Guessing
 
@@ -145,7 +142,7 @@
 
 **Note:** Future-date validation is not explicitly described in the detailed requirements. The expected behavior and any error message should be confirmed.
 
-### Test Case 6 – Enter an invalid date
+**Test Case 6 – Enter an invalid date**
 
 **Test Design Technique:** Error Guessing
 
@@ -157,13 +154,11 @@
 
 **Note:** The detailed requirements specify the date format as DD/MM/YYYY but do not define how invalid dates should be handled or which error message should be displayed. This behavior should be confirmed.
 
----
-
 ## 3. Shipping Cost Change
 
 **Test Design Techniques:** Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Decision Table Testing, Error Guessing.
 
-### Test Case 1 – Order value is exactly €20
+**Test Case 1 – Order value is exactly €20**
 
 **Test Design Technique:** Boundary Value Analysis (BVA)
 
@@ -173,7 +168,7 @@
 
 **Automation:** Yes. This is a critical boundary test and should be automated to verify the free-shipping threshold.
 
-### Test Case 2 – Order value is €19.99
+**Test Case 2 – Order value is €19.99**
 
 **Test Design Technique:** Boundary Value Analysis (BVA)
 
@@ -183,7 +178,7 @@
 
 **Automation:** Yes. This test verifies the value immediately below the free-shipping threshold and is suitable for automation.
 
-### Test Case 3 – Order value is above €20
+**Test Case 3 – Order value is above €20**
 
 **Test Design Technique:** Equivalence Partitioning (EP)
 
@@ -193,7 +188,7 @@
 
 **Automation:** Yes. This verifies the valid order-value group above the threshold and can be automated with different values.
 
-### Test Case 4 – Display the remaining amount needed for free shipping
+**Test Case 4 – Display the remaining amount needed for free shipping**
 
 **Test Design Technique:** Decision Table Testing
 
@@ -203,3 +198,6 @@
 
 **Automation:** Yes. The calculation and displayed message can be checked automatically using different order values.
 
+
+
+**Note:** The detailed requirements specify a €5 shipping fee for orders below €20 but do not explicitly describe how the fee is handled across different checkout steps. This test checks a reasonable potential error and should be aligned with the checkout implementation.
