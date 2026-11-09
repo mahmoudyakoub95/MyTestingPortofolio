@@ -74,17 +74,6 @@
 
 **Automation:** Yes – verifies partial review editing.
 
-**Test Case 8 – Submit written feedback without a star rating**
-
-**Technique:** Error Guessing
-
-**Input:** A user enters written feedback but does not select any stars.
-
-**Expected Outcome:** The system should reject the submission.
-
-**Automation:** Yes – checks incomplete submissions.
-
-**Note:** Whether a star rating is mandatory in this situation should be confirmed.
 
 ---
 
