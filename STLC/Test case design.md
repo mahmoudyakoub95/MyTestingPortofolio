@@ -24,9 +24,19 @@
 
 **Automation:** Yes – verifies the maximum rating value.
 
-**Test Case 3 – Submit a rating without written feedback**
+**Test Case 3 – Submit a rating with written feedback**
 
-**Technique:** Decision Table Testing
+**Technique:** Use Case Testing
+
+**Input:** A registered user who purchased the product selects 4 stars, enters written feedback, and submits the review.
+
+**Expected Outcome:** The system accepts and saves both the star rating and written feedback.
+
+**Automation:** Yes – verifies the normal review submission workflow.
+
+**Test Case 4 – Submit a rating without written feedback**
+
+**Technique:** Use Case Testing
 
 **Input:** A registered user who purchased the product selects 4 stars without entering written feedback.
 
@@ -34,7 +44,7 @@
 
 **Automation:** Yes – verifies that written feedback is optional.
 
-**Test Case 4 – Submit a rating without purchasing the product**
+**Test Case 5 – Submit a rating without purchasing the product**
 
 **Technique:** Decision Table Testing
 
@@ -44,7 +54,7 @@
 
 **Automation:** Yes – verifies the purchase restriction.
 
-**Test Case 5 – Edit an existing review**
+**Test Case 6 – Edit an existing review**
 
 **Technique:** Use Case Testing
 
@@ -54,7 +64,7 @@
 
 **Automation:** Yes – verifies the review-editing workflow.
 
-**Test Case 6 – Delete an existing review**
+**Test Case 7 – Delete an existing review**
 
 **Technique:** Use Case Testing
 
@@ -64,7 +74,7 @@
 
 **Automation:** Yes – verifies the review-deletion workflow.
 
-**Test Case 7 – Remove written feedback but keep the star rating**
+**Test Case 8 – Remove written feedback but keep the star rating**
 
 **Technique:** Use Case Testing
 
@@ -74,6 +84,27 @@
 
 **Automation:** Yes – verifies partial review editing.
 
+**Test Case 9 – Submit a very long comment**
+
+**Technique:** Error Guessing
+
+**Input:** A registered user who purchased the product enters a very long written comment and submits the review.
+
+**Expected Outcome:** The system handles the comment without crashing or displaying an unexpected error.
+
+**Automation:** Yes – checks how the system handles unusually long input.
+
+**Note:** The maximum comment length is not specified in the requirements.
+
+**Test Case 10 – Edit or delete a review after logging in again**
+
+**Technique:** Use Case Testing
+
+**Input:** A user submits a review, logs out, logs back into the same account, and attempts to edit or delete the existing review.
+
+**Expected Outcome:** The user's existing review is still available and can be edited or deleted.
+
+**Automation:** Yes – verifies that reviews remain associated with the user's account across sessions.
 
 ---
 
@@ -119,9 +150,19 @@
 
 **Expected Outcome:** The system denies access, hides the alcoholic products, and displays the underage message.
 
-**Automation:** Yes – verifies the transition to the denied-access state.
+**Automation:** Yes – verifies that underage users cannot access the category.
 
-**Test Case 5 – Enter a future date of birth**
+**Test Case 5 – Verify age verification window appears**
+
+**Technique:** Use Case Testing
+
+**Input:** A user opens the alcoholic products category.
+
+**Expected Outcome:** The system displays the age verification window before allowing access to the category.
+
+**Automation:** Yes – verifies that age verification is triggered when entering the category.
+
+**Test Case 6 – Enter a future date of birth**
 
 **Technique:** Error Guessing
 
@@ -133,7 +174,7 @@
 
 **Note:** Future-date validation is not specified in the requirements and should be confirmed.
 
-**Test Case 6 – Enter an invalid date**
+**Test Case 7 – Enter an invalid date**
 
 **Technique:** Error Guessing
 
@@ -149,7 +190,7 @@
 
 ## 3. Shipping Cost Change
 
-**Test Design Techniques:** BVA, EP, Decision Table Testing, Error Guessing.
+**Test Design Techniques:** BVA, EP, Decision Table Testing, Use Case Testing, Error Guessing.
 
 **Test Case 1 – Order value is exactly €20**
 
@@ -190,3 +231,23 @@
 **Expected Outcome:** The system displays a message below the order details informing the user that they need to spend €5 more to qualify for free shipping.
 
 **Automation:** Yes – verifies the remaining-amount calculation and message.
+
+**Test Case 5 – Move from free shipping to paid shipping**
+
+**Technique:** Use Case Testing
+
+**Input:** A user adds products worth more than €20 to the cart and then removes one or more products, reducing the order value below €20.
+
+**Expected Outcome:** The system applies the €5 shipping fee to the order.
+
+**Automation:** Yes – verifies that shipping costs are recalculated when the cart value decreases below the threshold.
+
+**Test Case 6 – Move from paid shipping to free shipping**
+
+**Technique:** Use Case Testing
+
+**Input:** A user adds products worth less than €20 to the cart and then adds more products, increasing the order value to €20 or more.
+
+**Expected Outcome:** The system removes the €5 shipping fee and applies free shipping.
+
+**Automation:** Yes – verifies that shipping costs are recalculated when the cart value reaches the free-shipping threshold.
