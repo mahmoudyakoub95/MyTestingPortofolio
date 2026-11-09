@@ -84,17 +84,15 @@
 
 **Automation:** Yes – verifies partial review editing.
 
-**Test Case 9 – Submit a very long comment**
+**Test Case 9 – Submit a very long comment with 500**
 
-**Technique:** Error Guessing
+**Technique:** BVA
 
-**Input:** A registered user who purchased the product enters a very long written comment and submits the review.
+**Input:** A registered user who purchased the product enters a very long written comment (500 charachter)and submits the review.
 
 **Expected Outcome:** The system handles the comment without crashing or displaying an unexpected error.
 
 **Automation:** Yes – checks how the system handles unusually long input.
-
-**Note:** The maximum comment length is not specified in the requirements.
 
 **Test Case 10 – Edit or delete a review after logging in again**
 
