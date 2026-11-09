@@ -113,7 +113,7 @@
 
 **Test Case 4 – Verify denied access for an underage user**
 
-**Technique:** State Transition Testing
+**Technique:** EP
 
 **Input:** A user opens the alcoholic products category and enters a date of birth indicating they are under 18.
 
