@@ -34,7 +34,7 @@
 | TC-08 | Remove written feedback but keep the rating | The user can remove the written comment while keeping the star rating. | Passed |  |  |
 | TC-09 | Submit a very long comment | The system handles the comment according to its allowed length and does not crash. | Passed |  |  |
 | TC-10 | Edit or delete a review after logging in again | The user's existing review remains available and can be edited or deleted after logging in again. | Passed |  |  |
-| TC-11 | Submit a comment longer than 500 characters after editing an existing review | The comment must not exceed the expected maximum of 500 characters. | **Failed** | A comment of approximately 4,000 characters was accepted. No 500-character limit was enforced. |  |
+| TC-11 | Submit a comment longer than 500 characters after editing an existing review | The comment must not exceed the expected maximum of 500 characters. | **Failed** | A comment of approximately 4,000 characters was accepted. No 500-character limit was enforced. | https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/1 |
 | TC-12 | Delete a review, then submit a new rating and comment for the same product | After deleting the previous review, the user can submit a new rating with written feedback. | **Failed** | After deleting the review, the system allowed only a rating; adding a written comment was not possible. |  |
 
 ### Feature 2 – Age Verification
