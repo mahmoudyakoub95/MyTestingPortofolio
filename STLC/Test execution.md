@@ -40,8 +40,8 @@ This document contains six representative test execution scenarios: two for each
 | 2 | Navigate to a product for which the user has already submitted a review. | The product page and the user's existing review are displayed. | OK | [Product page URL] | — |
 | 3 | Delete the existing review. | The existing review is deleted successfully. | OK | [Product page URL] | — |
 | 4 | Select a new star rating for the same product. | The new star rating is accepted. | OK | [Product page URL] | — |
-| 5 | Enter written feedback for the new review and submit it. | The system accepts and submits the new rating together with the written feedback. | NOK | [Product page URL] | [GitHub issue link] |
-| 6 | Check the newly submitted review on the product page. | The new star rating and written feedback are both displayed. | NOK | [Product page URL] | [GitHub issue link] |
+| 5 | Enter written feedback for the new review and submit it. | The system accepts and submits the new rating together with the written feedback. | NOK | [Product page URL] | [https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/2] |
+| 6 | Check the newly submitted review on the product page. | The new star rating and written feedback are both displayed. | NOK | [Product page URL] | [https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/2] |
 
 **Observed result:** After deleting the previous review, the system allowed the user to submit a new rating, but it did not allow the user to add written feedback.
 
