@@ -57,7 +57,7 @@
 | TC-21 | Place an order with a total of €19.99 | A shipping fee of €5 is applied. | Passed |  |  |
 | TC-22 | Place an order with a total of €25 | Shipping is free. | Passed |  |  |
 | TC-23 | Place an order with a total of €15 | A €5 shipping fee is applied, and the message states that the user needs to spend €5 more to qualify for free shipping. | Passed |  |  |
-| TC-24 | Remove product(s) so the order total changes from above €20 to below €20 | The system recalculates shipping and applies the €5 shipping fee. | **Failed** |  |  |
+| TC-24 | Remove product(s) so the order total changes from above €20 to below €20 | The system recalculates shipping and applies the €5 shipping fee. | **Failed** |  | https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/6 |
 | TC-25 | Add product(s) so the order total changes from below €20 to €20 or more | The system recalculates shipping and removes the €5 fee. | Passed |  |  |
 
 ## 4. Bug References
