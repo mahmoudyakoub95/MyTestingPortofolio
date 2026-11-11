@@ -74,9 +74,9 @@ This document contains six representative test execution scenarios: two for each
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |---:|---|---|:---:|---|---|
-| 1 | Open the GroceryMate webshop. | The webshop homepage is displayed without an age verification window. | NOK | https://grocerymate.masterschool.com/ | [GitHub issue link] |
-| 2 | Navigate to the category containing alcoholic products. | The age verification window appears when the user opens the alcoholic products category. | NOK | [Alcohol category URL] | [GitHub issue link] |
-| 3 | Check the point at which the age verification window is displayed. | The age verification window is displayed specifically when entering the alcoholic products category, not on the general shopping page. | NOK | [Page URL] | [GitHub issue link] |
+| 1 | Open the GroceryMate webshop. | The webshop homepage is displayed without an age verification window. | NOK | https://grocerymate.masterschool.com/ | [https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/3] |
+| 2 | Navigate to the category containing alcoholic products. | The age verification window appears when the user opens the alcoholic products category. | NOK | [Alcohol category URL] | [https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/3] |
+| 3 | Check the point at which the age verification window is displayed. | The age verification window is displayed specifically when entering the alcoholic products category, not on the general shopping page. | NOK | [Page URL] | [https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/3] |
 
 **Observed result:** The age verification window appeared on the general shopping page instead of appearing when entering the alcoholic products category.
 
