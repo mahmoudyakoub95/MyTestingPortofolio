@@ -45,7 +45,7 @@
 | TC-14 | Verify a user who is one day under 18 | The user is denied access and sees the specified underage message. | Passed |  |  |
 | TC-15 | Verify a user who is 25 years old | The user is allowed to access the alcoholic products category. | Passed |  |  |
 | TC-16 | Verify that underage users cannot access or view alcoholic products | Alcoholic products are not accessible or visible to users under 18. | Passed |  |  |
-| TC-17 | Check whether the age verification window appears when entering the alcoholic products category | The age verification window appears when the user tries to enter the alcoholic products category. | **Failed** | The age verification window appeared when entering the general shopping page, rather than when entering the alcoholic products category. |  |
+| TC-17 | Check whether the age verification window appears when entering the alcoholic products category | The age verification window appears when the user tries to enter the alcoholic products category. | **Failed** | The age verification window appeared when entering the general shopping page, rather than when entering the alcoholic products category. | https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/3 |
 | TC-18 | Enter a future date of birth | The system rejects the invalid date and displays an appropriate error message. | **Failed** | The displayed error message was incorrect. |  |
 | TC-19 | Enter an invalid date (31/02/2000) | The system rejects the invalid date and displays an appropriate error message. | **Failed** | The displayed error message was incorrect. |  |
 
