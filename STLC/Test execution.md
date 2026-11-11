@@ -112,7 +112,7 @@ This document contains six representative test execution scenarios: two for each
 | 1 | Open the GroceryMate webshop and add products to the shopping cart until the order total is at least €20. | The selected products are added to the cart and the order qualifies for free shipping. | OK | https://grocerymate.masterschool.com/ | — |
 | 2 | Open the shopping cart or order summary. | The order details and free-shipping status are displayed. | OK | [Cart page URL] | — |
 | 3 | Remove one or more products so that the order total falls below €20. | The products are removed and the order subtotal is updated to an amount below €20. | OK | [Cart page URL] | — |
-| 4 | Check the shipping fee and the free-shipping information after the order total changes. | The system recalculates the order: a €5 shipping fee is applied, and the message indicates how much more the customer needs to spend to qualify for free shipping. | NOK | [Cart page URL] | [GitHub issue link] |
+| 4 | Check the shipping fee and the free-shipping information after the order total changes. | The system recalculates the order: a €5 shipping fee is applied, and the message indicates how much more the customer needs to spend to qualify for free shipping. | NOK | [Cart page URL] | [https://github.com/mahmoudyakoub95/MyTestingPortofolio/issues/6] |
 
 **Observed result:** This test case failed. The specific actual behavior observed after removing the products has not been provided, so it should be added here before submitting the report.
 
