@@ -118,19 +118,4 @@ This document contains six representative test execution scenarios: two for each
 
 ---
 
-## Execution Summary
-
-| Scenario | Related test case | Feature | Result |
-|---|---|---|---|
-| Submit a rating with written feedback | TC-03 | Product Rating | Passed |
-| Delete a review and submit a new review | TC-12 | Product Rating | Failed |
-| Verify a user who is 25 years old | TC-15 | Age Verification | Passed |
-| Check when the age verification window appears | TC-17 | Age Verification | Failed |
-| Place an order with a total of €25 | TC-22 | Shipping | Passed |
-| Remove products so the order total falls below €20 | TC-24 | Shipping | Failed |
-
-**Before submission:**
-- Replace the URL placeholders with the actual URLs used during testing.
-- Add the GitHub issue links for the failed scenarios after creating the issues.
-- For TC-24, add the exact actual behavior observed when the order total fell below €20.
 
