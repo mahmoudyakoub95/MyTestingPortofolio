@@ -16,7 +16,7 @@ from count_word_matches import count_word_matches
     ids=["TC01","TC02","TC03","TC04","TC05","TC06","TC07"]
 )
 
-#Test the edge cases
+#Test the normal cases
 def normal_case(request):
     return request.param
 
